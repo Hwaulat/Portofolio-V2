@@ -7,7 +7,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { DATA } from "@/data/resume";
+import { DATA } from "@/data/project";
 import Markdown from "react-markdown";
 
 export const metadata = {
@@ -29,16 +29,15 @@ export default function Page() {
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  My Design from 2022 - Now
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on various design projects, from e-commerce to manufacturing. Here are a few of my
-                  favorites.
+                Below is a collection of projects that have been created, ranging from case studies to internships.
                 </p>
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 max-w-[1000px] mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
